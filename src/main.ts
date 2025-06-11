@@ -11,6 +11,19 @@ type Dipendente = {
   contratto: 'indeterminato' | 'determinato' | 'freelance';
 };
 
+// snack 3
+type Developer = Dipendente & {
+  livelloEsperienza: 'junior' | 'mid' | 'senior';
+  linguaggi?: string[];
+  certificazioni: string[];
+};
+
+type ProjectManager = Dipendente & {
+  teamSize: null | number;
+  budgetGestito?: number | string;
+  stakeholderPrincipali: string[];
+};
+
 let apiRes: unknown = [1, 2, 3];
 
 if (apiRes === null) {
