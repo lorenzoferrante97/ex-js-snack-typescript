@@ -24,6 +24,13 @@ type ProjectManager = Dipendente & {
   stakeholderPrincipali: string[];
 };
 
+type Team = {
+  nome: string;
+  progettoAttuale: string | null;
+  budget: number;
+  membri: [ProjectManager, Developer, ...Developer[]];
+};
+
 let apiRes: unknown = [1, 2, 3];
 
 if (apiRes === null) {
