@@ -1,9 +1,11 @@
 // start code
 
-let apiRes: unknown = null;
+let apiRes: unknown = [1, 2, 3];
 
 if (apiRes === null) {
   console.log('Il dato è vuoto');
+} else if (Array.isArray(apiRes)) {
+  console.log(apiRes.length);
 } else {
   switch (typeof apiRes) {
     case 'string':
