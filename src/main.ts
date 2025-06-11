@@ -1,5 +1,14 @@
 // start code
 
+// snack 2
+type Dipendente = {
+  nome: string;
+  cognome: string;
+  annoNascita: number;
+  sesso: 'm' | 'f';
+  anniDiServizio: number[];
+};
+
 let apiRes: unknown = [1, 2, 3];
 
 if (apiRes === null) {
