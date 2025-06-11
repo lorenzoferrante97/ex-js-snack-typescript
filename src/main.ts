@@ -7,6 +7,8 @@ type Dipendente = {
   annoNascita: number;
   sesso: 'm' | 'f';
   anniDiServizio: number[];
+  readonly emailAziendale: string;
+  contratto: 'indeterminato' | 'determinato' | 'freelance';
 };
 
 let apiRes: unknown = [1, 2, 3];
